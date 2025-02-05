@@ -42,7 +42,6 @@ The API returns a JSON object with the following fields:
 The API checks for the following properties of a number:
 - **Prime**: A number greater than 1 that has no divisors other than 1 and itself.
 - **Perfect**: A number that is equal to the sum of its proper divisors (e.g., 6 = 1 + 2 + 3).
-- **Armstrong**: A number that is equal to the sum of its own digits each raised to the power of the number of digits (e.g., 371 = 3^3 + 7^3 + 1^3).
 - **Even/Odd**: A number is even if it is divisible by 2, otherwise it is odd.
 
 ## Tools
