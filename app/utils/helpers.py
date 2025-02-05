@@ -1,4 +1,8 @@
 def validate_input(number):
-    if not number or not number.lstrip('-').isdigit():
+    try:
+        # Try to convert the input to a float (supports integers and decimals)
+        float(number)
+        return True
+    except (ValueError, TypeError):
+        # If conversion fails, the input is invalid
         return False
-    return True

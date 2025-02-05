@@ -1,9 +1,6 @@
-print("Initializing app package...")
-
 from flask import Flask
 
 def create_app():
-    print("Creating Flask app...")
     app = Flask(__name__)
 
     # Register blueprints
@@ -11,4 +8,3 @@ def create_app():
     app.register_blueprint(number_bp)
 
     return app
-    
