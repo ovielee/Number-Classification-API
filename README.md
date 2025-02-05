@@ -1,6 +1,4 @@
-Here’s a well-structured `README.md` for your **Number Classification API** project, written in Markdown:
 
-```markdown
 # Number Classification API
 
 ## Overview
