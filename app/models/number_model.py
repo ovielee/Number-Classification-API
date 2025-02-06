@@ -13,6 +13,7 @@ def is_perfect(n):
     return sum(divisors) == n
 
 def is_armstrong(n):
-    digits = [int(d) for d in str(n)]
+    # Convert the number to a string and ignore the negative sign
+    digits = [int(d) for d in str(abs(n))]
     length = len(digits)
-    return sum(d**length for d in digits) == n
+    return sum(d**length for d in digits) == abs(n)
