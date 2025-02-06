@@ -20,7 +20,7 @@ def classify_number_api():
         number = int(number)
 
     properties = classify_number(number)
-    class_sum = sum(int(d) for d in str(abs(number)) if d.isdigit())  # Sum of digits (ignore negative sign)
+    digit_sum = sum(int(d) for d in str(abs(number)) if d.isdigit())  # Sum of digits (ignore negative sign)
     fun_fact = get_fun_fact(number)
 
     return jsonify({
@@ -28,6 +28,6 @@ def classify_number_api():
         "is_prime": "prime" in properties if isinstance(number, int) else False,
         "is_perfect": "perfect" in properties if isinstance(number, int) else False,
         "properties": properties,
-        "class_sum": class_sum,
+        "digit_sum": digit_sum,  # Add digit_sum field
         "fun_fact": fun_fact
     })
